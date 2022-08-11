@@ -1,0 +1,50 @@
+
+html{
+    box-sizing:border-box;
+
+    
+}
+
+.la-tortuguita {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.la-tortuguita img{
+    width: 100%;
+}
+
+nav{
+    background-color: #f4c8ab;
+}
+
+.__nav{
+    padding: 2px;
+}
+
+.__nav-item{
+    display:inline-block;
+}
+
+.__nav a{
+    list-style: none;
+    color: #ee6b4e;
+    padding: 2px;
+    text-decoration:none ;
+    
+}
+
+
+.__nav a:hover {
+    color: #f1ece8;
+}
+
+.__nav a:active {
+    color: #bb462c;
+}
+
+.__nav a::after {
+    content: "  |  ";
+}
