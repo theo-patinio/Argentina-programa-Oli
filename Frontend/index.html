@@ -1,35 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio Olivia *·˚</title>
-    <link rel="stylesheet" href="./styles.css"
+    <title>Document</title>
+    <link rel ="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
 </head>
 <body>
-    <head> 
-        <nav>
-            <ul class="__nav">
-                <li class="__nav-item">
-                    <a href="#">Home</a> 
-                </li>
-                <li class="__nav-item">
-                    <a href="#">Blog</a> 
-                </li>
-                <li class="__nav-item">
-                    <a href="#">Contacto</a> 
-                </li>
-            </ul>
-        </nav>
 
-        <main>
-            <section>
-                <figure class="la-tortuguita">
-                    <img src="./img's/tortuguita (2).jpg">
-                </figure>
-            </section>
-        </main>
-    </head>
+
+<!-- nav bar -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img's/APLogo-20-20.png" alt="Argentina Programa">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Estudios</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Mi</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trabajos</a>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal" 
+            data-bs-target="#modalUsuario" id=" crearUsuarioBoton">Crear Usuario</button>
+          </form>
+        </div>
+      </div>
+      
+    </nav>
+    
+    <!-- /nav bar -->
+    
+    <!-- Modal -->
+        <div class="modal fade" id="modalUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog .modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">₊˚ ·♡</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                                <!--  Formulario-->
+                <section id="formulario" class="pt-2 pb-2">
+                  <div class="container">
+                    </div>
+                    <div class="row">
+                      <div class="col text-center"> Pon tu nombre y apellido para empezar a crear tu usuario!</div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <div class="row">
+                          <div class="form-label col-6 ">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                          </div>
+                          <div class="form-label col-6 ">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                </div>
+                </section>
+                <!--//Formulario-->
+
+
+              <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal" id="modalEnviar">Cerrar</button>
+                <button type="button" class="btn" id="modalCerrar">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>  
+        <!-- /Modal -->
+
+
+      <!-- main-->
+      <main id="main">
+              <!-- carrousel img-->
+          <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="/img's/banner1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/img's/banner2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/img's/banner3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="overlay">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6 offset-md-6 text-center text-md-end">
+                      <h1>Porfolio Oliviaˏ`୭̥.</h1>
+                      <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias aliquam dicta consequatur quisquam dolor sequi assumenda quam, ipsum pariatur voluptates id, odio praesentium error. Obcaecati dolores optio iure officiis mollitia?
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                <!-- /carrousel img -->
+    </main>   
+    <!-- /main-->
+
+
+    <!-- Tarjetas-->
+    <section  id="tarjetas" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Lore lorem</small>
+            <h2>Lorem</h2>
+          </div>
+        </div>
+
+
+        <div class="row tarjeta">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-none d-md-block">
+                  <img src="/img's/tarjeta-pruev-1.jpg" class="img-fluid rounded-start" alt=".">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum molestias ipsa dolore odio soluta corporis voluptatibus, ad cupiditate fugiat nobis debitis laborum temporibus saepe similique nisi doloremque quibusdam exercitationem?</p>
+                    <p class="card-text"><small class="text-muted">Olivia, alias La doña.</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row tarjeta">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-none d-md-block">
+                  <img src="/img's/tarjeta-pruev-4.jpg" class="img-fluid rounded-start" alt=".">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum molestias ipsa dolore odio soluta corporis voluptatibus, ad cupiditate fugiat nobis debitis laborum temporibus saepe similique nisi doloremque quibusdam exercitationem?lorem</p>
+                    <p class="card-text"><small class="text-muted">Olivia, alias La doña.</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row tarjeta">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-none d-md-block ">
+                  <img src="/img's/tarjeta-pruev-2.jpg" class="img-fluid rounded-start" alt=".">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum molestias ipsa dolore odio soluta corporis voluptatibus, ad cupiditate fugiat nobis debitis laborum temporibus saepe similique nisi doloremque quibusdam exercitationem?</p>
+                    <p class="card-text"><small class="text-muted">Olivia, alias La doña.</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row tarjeta">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-none d-md-block">
+                  <img src="/img's/tarjeta-pruev-3.jpg" class="img-fluid rounded-start" alt=".">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum molestias ipsa dolore odio soluta corporis voluptatibus, ad cupiditate fugiat nobis debitis laborum temporibus saepe similique nisi doloremque quibusdam exercitationem?</p>
+                    <p class="card-text"><small class="text-muted">Olivia, alias La doña.</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- //Tarjetas-->
+
+    <!--   Skill-->
+<section class="skillContainer ">
+
+      <div class="skill offset-2">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">
+              65%
+            </div>
+          </div>
+        </div>
+        <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+             <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e6bfb2" />
+                <stop offset="100%" stop-color="#ede9e3 " />
+             </linearGradient>
+          </defs>
+          <circle class="circle1"cx="80" cy="80" r="70" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="skill offset-2">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">
+              20%
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+             <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e6bfb2" />
+                <stop offset="100%" stop-color="#ede9e3 " />
+             </linearGradient>
+          </defs>
+          <circle class="circle2 " cx="80" cy="80" r="70" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+        <div class="skill offset-2">
+          <div class="outer">
+            <div class="inner">
+              <div id="number">
+                81%
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e6bfb2" />
+                  <stop offset="100%" stop-color="#ede9e3 " />
+               </linearGradient>
+            </defs>
+            <circle class="circle3" cx="80" cy="80" r="70" stroke-linecap="round"/>
+          </svg>
+        </div>
+  
+</section>        
+    <!-- //Skill-->
+
+
+    <!-- footer -->
+    <footer id="footer" class="pb-4 pt-4" >
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12  col-lg">
+                    <a href="#"> Preguntas frecuentes</a>
+                </div>
+
+                <div class="col-12 col-lg">
+                    <a href="#"> Contactanos </a>
+                </div>
+
+                <div class="col-12 col-lg">
+                    <a href="#"> Prensa </a>
+                </div>
+
+                <div class="col-12 col-lg">
+                    <a href="#"> Terminos y condiciones </a>
+                </div>
+
+                <div class="col-12 col-lg">
+                     <a href="#"> Bla </a>
+                </div>
+
+                <div class="col-12 col-lg">
+                    <a href="#"> Contactos </a>
+                </div>
+
+                </div>
+            </div>
+        
+    </footer>
+    <!-- /footer -->
+
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, cumque. Dicta dolorum voluptates iusto mollitia commodi iste itaque magni laborum eveniet magnam maxime cupiditate repellendus consequatur accusantium suscipit, quasi provident.
+    Doloremque commodi inventore quaerat corrupti nostrum quia voluptatum numquam officiis cupiditate nihil mollitia laborum facilis, sunt neque aperiam natus ut ipsa quisquam autem totam, amet qui assumenda possimus. Architecto, temporibus.
+    Ipsam rem quae quibusdam tempora ab cupiditate sit corrupti repellendus hic ullam voluptate repudiandae, laboriosam repellat ducimus nisi debitis illum voluptatum pariatur? Consequuntur aliquid possimus assumenda earum nisi nemo alias.
+    Corporis magni quod molestias ipsa vel, soluta quam reprehenderit dolor quisquam perferendis reiciendis quas iure. Temporibus quae repellat doloremque, mollitia, ipsa enim earum ducimus blanditiis harum voluptatibus, adipisci quisquam inventore!
+    Porro animi labore rem hic distinctio ipsam id tempora. Ex aperiam maxime adipisci quia consequuntur, optio neque cumque accusamus ipsam, assumenda amet ipsa ducimus, blanditiis impedit quasi nisi est? Numquam.
+    Cupiditate non cum facere reprehenderit iste vitae nam laboriosam fugit quaerat exercitationem earum, ducimus deserunt quisquam ratione hic ab voluptatibus, nobis dignissimos et. Blanditiis, quidem dolorem voluptatem laboriosam dolore explicabo?
+    Ex maiores numquam repudiandae vero inventore labore quibusdam quis, magnam officiis officia adipisci esse similique corrupti totam enim ab sit, atque voluptates, ad voluptatem nemo dolor ipsam blanditiis nostrum. Perferendis!
+    Dolores voluptatem quae ad similique laboriosam tempore esse alias sint placeat sapiente minima maxime architecto, quidem suscipit quaerat nemo eum modi, tenetur mollitia dignissimos quasi repellat. Eos minima culpa a.
+    Fuga, illo? Commodi vero labore dolor, architecto repudiandae ut ratione mollitia nihil nemo illum voluptatum voluptatem laudantium doloribus quod reprehenderit optio exercitationem, perferendis accusamus aperiam nulla voluptatibus impedit beatae quis.
+    Nihil iusto error vero dicta, enim rem debitis? Molestias ducimus totam blanditiis nemo ab autem nulla, itaque porro odit non aut, alias nisi quaerat quod laboriosam culpa qui eos sed?
+    Repellat, fugit. Aliquam saepe nam veniam veritatis quos laboriosam, explicabo quis tempora! Quos nobis vitae, cum corrupti quaerat ipsum magnam commodi qui unde amet fuga voluptas autem, temporibus laboriosam. Doloribus.
+    Ipsum adipisci a numquam minus praesentium, omnis ipsa ducimus nobis doloremque. Aut, id optio! Quidem fugit placeat, expedita ipsa beatae maiores reiciendis architecto, nesciunt officiis culpa asperiores facere, nam temporibus.
+    Magni iste atque itaque, provident libero commodi iure fuga modi praesentium illum unde laboriosam temporibus quia quidem quae, dicta numquam harum voluptates rerum veniam ab? Aut maiores consequatur voluptatum nostrum?
+    Amet earum nihil, vel eius beatae magni labore asperiores modi, ullam ab vero. Molestias ex voluptatum vero ipsum expedita alias fuga, aspernatur exercitationem corporis repellat velit excepturi nostrum aliquid nulla.
+    Fugit ducimus maiores repellat deserunt veritatis perspiciatis, porro architecto aspernatur. Recusandae voluptatibus velit explicabo, reiciendis eligendi quia, tempora consequatur natus soluta tempore voluptate excepturi voluptatum alias libero repellat! Nisi, expedita.
+    Omnis mollitia nihil asperiores! Excepturi libero sapiente, debitis voluptatum tempora doloremque eos exercitationem repellendus laudantium accusamus odit, facere quae ab nemo aperiam laborum eum vero, praesentium nobis ex esse sit?
+    Nesciunt, quisquam rem vel ratione optio illum officia inventore quia suscipit eum minima provident aperiam sunt maxime dolor sit architecto, distinctio, unde iusto doloremque eius. In dolor eos libero laboriosam.
+    Dolorum totam tempora suscipit culpa a, blanditiis natus perferendis reprehenderit ratione, corporis eligendi, debitis quis ipsa delectus error quidem distinctio iste nesciunt eius harum repudiandae autem! Voluptatum aut totam deleniti!
+    Nam similique placeat laudantium ipsum. Modi perspiciatis cupiditate ullam laboriosam, et molestias alias corrupti natus dolor placeat iusto magni, assumenda cum recusandae! Esse voluptates illo nam cum, facilis asperiores harum.
+    Mollitia, facilis eaque odio, aspernatur rem obcaecati quis consequatur sequi nihil asperiores libero hic veritatis quasi. Porro optio laboriosam cumque doloremque rerum ducimus, excepturi numquam deserunt odit? Ut, cupiditate nihil?</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="/index.js"></script>
+    
 </body>
 </html>

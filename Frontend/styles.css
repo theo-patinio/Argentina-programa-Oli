@@ -1,50 +1,177 @@
+#header img{
+    width: 100px;
+}
 
-html{
-    box-sizing:border-box;
+#main img{
+    max-height: 50vh;
+    object-fit: cover;
+}
 
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ede9e3;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+height: 100%;
+}
+
+#modalUsuario #modalEnviar{
+    background-color: #8b7367;
+    color: white;
+}
+
+#modalUsuario #modalCerrar{
+    background-color: #dadada;
+    color: white;
+}
+
+#tarjetas{
+    color: #422a1e;
+}
+
+.tarjeta{
+    color: #694939;
+}
+
+.tarjeta .col-md-4{
+    height: 200px;
+    width: 200px;
+}
+
+.tarjeta img{
+    height: 200px;
+}
+
+#boton{
+    background-color: #d4b2a7;
+    color: white;
+}
+
+#formulario{
+    color: #694939;
+}
+
+.skillContainer{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-right: 250px;
+}
+
+.skill{
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    position: relative;
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px #dbceca, 6px 6px 10px -1px #ffefea;
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), 
+                inset -4px -4px 6px -1px rgba(253, 244, 244, 0.7),
+                -0.5px -0.5px 0px rgba(255, 242, 242, 1),
+                0px 12px 10px -10px rgb(0, 0, 0, 0.05) ;                 ;
+}
+
+#number{
+    font-weight: 600px;
+    color: #422a1e;
+}
+
+
+:root{
+    --segundos_circle1: 165.5;
+}
+
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circle1{
+    fill:none;
+    stroke: url(#GradientColor) ;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim1 2s linear forwards;
+}
+
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: var(--segundos_circle1);
+    }
+}
+
+.circle2{
+    fill:none;
+    stroke: url(#GradientColor) ;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+}
+
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 377.6;
+    }
+}
+
+.circle3{
+    fill:none;
+    stroke: url(#GradientColor) ;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+}
+
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 89.68;
+    }
+}
+
+
+
+footer {
+    background: linear-gradient(90deg, #ede9e3, #e7d7c9, 50%, #e6bfb2);
+}
+
+footer a{
+    color: #8b7367;
+    text-decoration: none;
     
 }
 
-.la-tortuguita {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-}
-
-.la-tortuguita img{
-    width: 100%;
-}
-
-nav{
-    background-color: #f4c8ab;
-}
-
-.__nav{
-    padding: 2px;
-}
-
-.__nav-item{
-    display:inline-block;
-}
-
-.__nav a{
-    list-style: none;
-    color: #ee6b4e;
-    padding: 2px;
-    text-decoration:none ;
-    
-}
-
-
-.__nav a:hover {
-    color: #f1ece8;
-}
-
-.__nav a:active {
-    color: #bb462c;
-}
-
-.__nav a::after {
-    content: "  |  ";
+footer a:hover{
+     color: #000000; 
 }
