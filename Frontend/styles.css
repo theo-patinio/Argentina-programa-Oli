@@ -28,7 +28,7 @@ height: 100%;
 }
 
 #modalUsuario #modalEnviar{
-    background-color: #8b7367;
+    background-color: #7E998D;
     color: white;
 }
 
@@ -38,11 +38,11 @@ height: 100%;
 }
 
 #tarjetas{
-    color: #422a1e;
+    color: #6A7B67;
 }
 
 .tarjeta{
-    color: #694939;
+    color: #6A7B67;
 }
 
 .tarjeta .col-md-4{
@@ -60,7 +60,7 @@ height: 100%;
 }
 
 #formulario{
-    color: #694939;
+    color: #6A7B67;
 }
 
 .skillContainer{
@@ -99,7 +99,7 @@ height: 100%;
 
 #number{
     font-weight: 600px;
-    color: #422a1e;
+    color: #6A7B67;
 }
 
 
@@ -116,7 +116,7 @@ svg{
 
 .circle1{
     fill:none;
-    stroke: url(#GradientColor) ;
+    stroke: #ACC4C0 ;
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
@@ -131,7 +131,7 @@ svg{
 
 .circle2{
     fill:none;
-    stroke: url(#GradientColor) ;
+    stroke: #ACC4C0 ;
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
@@ -146,7 +146,7 @@ svg{
 
 .circle3{
     fill:none;
-    stroke: url(#GradientColor) ;
+    stroke: #ACC4C0 ;
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
@@ -162,11 +162,11 @@ svg{
 
 
 footer {
-    background: linear-gradient(90deg, #ede9e3, #e7d7c9, 50%, #e6bfb2);
+    background: linear-gradient(90deg, #ede9e3, #C8DBCD, 50%, #ACC4C0);
 }
 
 footer a{
-    color: #8b7367;
+    color: #7E998D;
     text-decoration: none;
     
 }
